@@ -1,0 +1,172 @@
+html{
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    color:white;
+    background: #1c3548;
+    font-family: 'Raleway', sans-serif;
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration:none;
+    font-weight: 900;
+    color:black;
+}
+.nav-container{
+    max-height: 15vh;
+    width:100%;
+    overflow:hidden;
+    display:flex;
+    background-color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+.navbar{
+    padding-top:25px;
+    margin-left: 10vw;
+    overflow: hidden;
+}
+.navbar a{
+    font-size: 110%;
+    padding:1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 1.5vh;
+    transition:0.2s ease-in-out;
+    color:white;
+}
+.navbar a:hover{
+    background:aqua;
+    color:blue;
+    transition:0.5s;
+    border-radius: 25px 6px 25px 6px;
+}
+.hey-text{
+    font-size: 130%;
+    padding:1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top:25px;
+    margin-left: 25vh;
+    color:white;
+    font-weight: 999;
+}
+
+.hey-text:hover{
+    background:red;
+    color:yellow;
+    transition:0.5s;
+    border-radius: 25px 2px 25px 2px;
+}
+.content img{
+    border: solid red;
+    border-radius: 10px;
+    margin:10vh;
+    width: 500px;
+}
+.content{
+    width:100%;
+    overflow:hidden;
+    margin-bottom: 0;
+    margin-top: 20px;
+    height: 80vh;
+}
+.main-title{
+    margin:0;
+    padding:0;
+    font-size: 3rem;
+    margin-left: 50%;
+    margin-top: 20%;
+    transform:translate(-10%, -180%);
+    color:#1c3548;
+}
+
+.main-title h2{
+    color: white;
+    font-style: italic;
+}
+.main-subhead{
+    margin:0vh;
+    font-size: 1.5rem;
+    color:white;
+    margin-bottom: 2vh;
+}
+.resume-btn{
+    background: blue;
+    border-color: red;
+    color:white;
+    padding:1rem;
+    font-size: 1.5rem;
+    border-radius: 50vh;
+    padding:2vh 4vh  ;
+    box-shadow: 0vh 1vh 2vh rgba(0, 0, 0 , 0.2) ;
+}
+
+.changing:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: yellow;
+}
+
+@keyframes changetext{
+    0%{content: "Front-End Web-Developer";}
+    25%{content: "Android Developer";}
+    50%{content: "Graphics Designer";}
+    75%{content: "ML Engineer";}
+    100%{content: "Blogger";}
+}
+
+.myskills{
+    align-items: center;
+    background-color: yellow;
+    color: blue;
+    width: 500px;
+    height: fit-content;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+    margin-right: 290px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0vh 1vh 2vh white ;
+}
+.myskills h1{
+    color: red;
+}
+
+.details{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-around;
+}
+
+.tools{
+    align-items: center;
+    background-color: yellow;
+    color: blue;
+    width: 500px;
+    height: fit-content;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0vh 1vh 2vh white ;
+}
+
+.tools h1{
+    color: red;
+}
